@@ -1,11 +1,84 @@
-<div align="center">
+# E-Library Perpustakaan IBM ASMI
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Aplikasi Web Perpustakaan Digital & Sirkulasi Peminjaman Buku IBM ASMI dibangun dengan React 19, TypeScript, Tailwind CSS, dan Vite.
 
-  <h1>Built with AI Studio</h2>
+---
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## 🚀 Panduan Menjalankan di Visual Studio Code (VS Code)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### 1. Prasyarat (Prerequisites)
+Pastikan di komputer/laptop Anda sudah terpasang:
+- **Node.js** versi 18 atau 20+ (Download di [nodejs.org](https://nodejs.org))
+- **Visual Studio Code** (Download di [code.visualstudio.com](https://code.visualstudio.com))
+- Terminal bawaan (Git Bash / PowerShell / Command Prompt / Terminal macOS/Linux)
 
-</div>
+---
+
+### 2. Unduh & Buka Project di VS Code
+1. Unduh file project ini (melalui tombol Download/Export ZIP di Google AI Studio atau `git clone`).
+2. Ekstrak file ZIP jika diunduh dalam bentuk arsip.
+3. Buka **Visual Studio Code**.
+4. Klik **File** > **Open Folder...** lalu pilih folder project ini.
+
+---
+
+### 3. Buka Terminal di VS Code
+- Tekan shortcut: ``Ctrl + ` `` (Windows) atau ``Cmd + ` `` (Mac).
+- Atau klik menu atas: **Terminal** > **New Terminal**.
+
+---
+
+### 4. Install Dependencies
+Jalankan perintah berikut di terminal VS Code:
+
+```bash
+npm install
+```
+*(Tunggu hingga proses instalasi library selesai dan folder `node_modules` terbuat).*
+
+---
+
+### 5. Konfigurasi Environment (Opsional)
+Jika menggunakan fitur AI Gemini:
+1. Duplikat file `.env.example` dan ubah namanya menjadi `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+2. Isi `GEMINI_API_KEY` jika diperlukan dengan API Key Anda dari [Google AI Studio](https://aistudio.google.com).
+
+---
+
+### 6. Jalankan Server Pengembangan (Dev Server)
+Jalankan perintah:
+
+```bash
+npm run dev
+```
+
+Setelah server aktif, terminal akan menampilkan URL lokal:
+```text
+  VITE v8.3.0  ready in ... ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://...
+```
+
+Klik tautan tersebut atau buka browser Anda (Chrome / Edge / Firefox) dan ketik:
+👉 **`http://localhost:3000`**
+
+---
+
+### 7. Perintah Berguna Lainnya
+
+- **Build untuk Produksi:**
+  ```bash
+  npm run build
+  ```
+- **Pratinjau Hasil Build:**
+  ```bash
+  npm run preview
+  ```
+- **Cek Tipe TypeScript:**
+  ```bash
+  npm run lint
+  ```

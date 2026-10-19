@@ -1,0 +1,6 @@
+{
+  "name": "IBM ASMI DIGITAL LIBRARY - E-Book Digital Institut Bisnis Dan Multimedia asmi",
+  "description": "Portal e-book digital dan sistem sirkulasi peminjaman Institut Bisnis Dan Multimedia asmi (IBM ASMI) dengan pembaca interaktif dan dashboard manajemen pustakawan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
